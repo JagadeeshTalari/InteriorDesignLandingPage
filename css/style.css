@@ -347,7 +347,8 @@ img[alt="light_bulb_svg"]{
     body{
         background-image: url('../assets_10/retro-living-room-interior-design.jpg');
         background-size: cover;
-        background-position: -250px 0px;
+        background-attachment: fixed;
+        background-position: center center;
         background-repeat: repeat-y;
         height: 100vh;
     }
@@ -407,14 +408,24 @@ img[alt="light_bulb_svg"]{
     .card1{
         /* height: 15vh; */
         position: relative;
-        left: 20rem;
-        bottom: 0rem;
+        left: 18rem;
+        bottom: -3rem;
     }
 
     .card2{
         position: relative;
-        top: 8rem;
-        right: -8rem;
+        top: 10rem;
+        right: -2rem;
+    }
+
+    .icon_bg{
+        height: 4.3vh;
+        width: 13vw;
+        background-color: #ffffff;
+        border-radius: 45px;
+        text-align: center;
+        padding-top: 0.4em;
+        margin-bottom: 1.2rem;
     }
 
     .circle{
@@ -454,4 +465,116 @@ img[alt="light_bulb_svg"]{
     }
 
     
+}
+
+@media screen and (max-width:540px) {
+
+    body{
+        height: max-content;
+        width: 100vw;
+        margin: auto;
+        background-attachment: fixed;
+        background-size: initial;
+        background-repeat: no-repeat;
+        /* background-position: center top; */
+        background-position: 50% 78.5%;
+    }
+
+    .container{
+        height: max-content;
+        padding: 1.5rem 1.75rem;
+        width: 95vw;
+        margin: auto;
+    }
+
+    .nav-bar{
+        height: 9vh;
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Logo_here{
+        margin-top: 0.5%;
+        font-size: 1rem;
+    }
+
+    .phone-call{
+        display: none;
+    }
+
+    .call-us>svg{
+        height: 3.5rem;
+    }
+
+    /* main content */
+
+    main{
+       margin: 0rem;
+       margin-top: 3rem;
+       gap: 15vh;
+    }
+
+    main>div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .button{
+        margin: auto;
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    .heading{
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card_section{
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+      /* width: 90%; */
+    
+    }
+    
+
+    .card1,.card2{
+        width: 50vw;
+        margin: auto;
+        position: relative;
+        left: 0rem;
+        bottom: 0rem;
+        top: 0rem;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .card2>p>br{
+        display: none;
+    }
+
+    .line1,
+    .c1,
+    .line2,.c2{
+       display: none;
+    }
+
+    .icon_bg{
+        height: 4.7vh;
+        width: 18.5vw;
+        background-color: #ffffff;
+        border-radius: 45px;
+        text-align: center;
+        padding-top: 0.4em;
+        margin-bottom: 1.2rem;
+    }
+    
+
+
 }
