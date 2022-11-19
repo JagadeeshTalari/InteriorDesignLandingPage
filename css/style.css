@@ -11,7 +11,8 @@
 
 body{
     background-image: url('../assets_10/retro-living-room-interior-design.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -19,10 +20,11 @@ body{
 .container{
     padding: 4em;
     height: 80vh;
+    padding-top: 3rem;
 }
 
 .nav-bar{
-    height: 10vh;
+    height: 9vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +45,7 @@ body{
 }
 
 .Logo_here{
-    margin-top: 1%;
+    margin-top: 0.5%;
     font-size: 2rem;
 }
 
@@ -52,7 +54,7 @@ body{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 4rem;
     font-size: 1.2rem;
 }
 
@@ -87,8 +89,9 @@ main{
 
 .button {
     margin-top: 10vh;
-    height: 6vh;
-    width: 17vw;
+    /* height: 6vh;
+    width: 17vw; */
+    padding: 2.25vh 4vw;
     background-color: transparent;
     border: solid#ffffff;
     border-radius: 35px;
@@ -97,62 +100,24 @@ main{
 }
 
 .card{
-    height: 16vh;
-    width: 21vw;
+    width: 15vw;
+    height: max-content;
     background-color: #c6c6c63b;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: 1.1rem;
     line-height: 1.3rem;
-    padding: 1rem;
+    padding: 2rem;
+    padding-bottom: 0.6rem;
 
 }
 
 .card1{
     height: 15vh;
     position: relative;
-    left: 6rem;
+    left: 8rem;
     bottom: 5rem;
-}
-
-.line{
-    content: "";
-    height: 1px;
-    width: 5vw;
-    background-color: #ffffff;
-}
-
-.circle{
-    content: "";
-    height: 2.5vh;
-    width: 1.4vw;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50%;
-}
-
-.line2{
-    position: relative;
-    left: 12.7rem;
-}
-
-.c2, .c1{
-    position: relative;
-    left: 16.8rem;
-    bottom: 0.8rem;
-}
-
-.line1{
-    rotate: 90deg;
-    position: relative;
-    left: 18.5rem;
-    bottom: 3rem;
-}
-.c1{
-    position: relative;
-    left: 20.1rem;
-    bottom: 0.9rem;
 }
 
 .card2{
@@ -161,52 +126,65 @@ main{
     right: 7rem;
 }
 
-img[alt="puzzle_svg"], img[alt="light_bulb_svg"]{
+img[alt="puzzle_svg"]{
     height: 3.5vh;
-    
+    transform: rotate(270deg);
 }
 
-.icon_bg{
+img[alt="light_bulb_svg"]{
     height: 4.5vh;
-    width: 6.75vw;
+}
+
+
+.icon_bg{
+    height: 5vh;
+    width: 5.25vw;
     background-color: #ffffff;
     border-radius: 25px;
     text-align: center;
     padding-top: 0.25em;
+    margin-bottom: 1.2rem;
 }
 
- @media screen and (min-width:1445px) and (max-width:1920px) { 
-    body{
-        background-image: url('../assets_10/retro-living-room-interior-design.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
+.line{
+    content: "";
+    height: 1.15px;
+    width: 5vw;
+    background-color: #ffffff;
+}
 
-    
-    .line2{
-        position: relative;
-        left: 18.7rem;
-    }
+.circle{
+    content: "";
+    height: 2.2vh;
+    width: 1.1vw;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+}
 
-    .c2{
-        position: relative;
-        left: 24rem;
-        bottom: 0.8rem;
-    }
+.line1{
+    rotate: 90deg;
+    position: relative;
+    left: 8rem;
+    top: 3.2rem;
+}
 
-    .line1{
-        rotate: 90deg;
-        position: relative;
-        left: 22rem;
-        bottom: 2.3rem;
-    }
-    .c1{
-        position: relative;
-        left: 24rem;
-        bottom: 0.2rem;
-    }
+.c1{
+    position: relative;
+    left: 4rem;
+    top: -.5rem;
+}
 
-   
+
+.line2{
+    height: 1px;
+    position: relative;
+    left: 16.35rem;
+    bottom: 5rem;
+}
+
+.c2{
+    position: relative;
+    left: 4rem;
+    bottom: 0.5rem;
 }
