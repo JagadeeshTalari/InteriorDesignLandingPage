@@ -188,3 +188,157 @@ img[alt="light_bulb_svg"]{
     left: 4rem;
     bottom: 0.5rem;
 }
+
+
+
+@media screen and (max-width:1439px) { 
+
+    /* main content */
+
+    main{
+        margin-top: 9rem;
+        margin-left: 4rem; 
+    }
+
+    .card{
+        width: 18vw;
+        padding-right: 1rem;
+    }
+
+    .line1{
+        top: 3rem;
+    }
+    
+    .line2{
+        position: relative;
+        left: 15.4rem;
+    }
+    
+   
+}
+
+@media screen and (max-width:1275px) {
+    
+    /* nav-bar */
+
+    .nav-bar{
+        height: 9.75vh;
+    }
+
+    .Logo_here{
+        margin-top: 0.5%;
+        font-size: 1.5rem;
+    }
+
+    .nav-list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .call-us>svg{
+        height: 4rem;
+    }
+
+    .phone-call{
+        margin-top: 0rem;
+        font-size: 1rem;
+    }
+
+    /* main content */
+
+    main{
+        margin-top: 7.5rem;
+        margin-left: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .heading{
+        width: 45vw;
+        font-size: 52px;
+        font-weight: 600;
+    }
+
+    .button {
+        padding: 2.25vh 3.8vw;
+        background-color: transparent;
+        border: solid#ffffff;
+        border-radius: 35px;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    /* cards */
+
+    .card{
+        width: 18vw;
+        height: max-content;
+        background-color: #c6c6c63b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        padding: 1.2rem;
+        padding-bottom: 0.6rem;
+    
+    }
+
+    .card1{
+        height: 15vh;
+        position: relative;
+        left: 7rem;
+        bottom: 5rem;
+    }
+
+    .card2{
+        position: relative;
+        top: 6.4rem;
+        right: 6rem;
+    }
+
+    .icon_bg{
+        margin-bottom: 0.8rem;
+    }
+
+    .circle{
+        content: "";
+        height: 1.9vh;
+        width: 0.92vw;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .line1{
+        top: 2.5rem;
+    }
+
+    
+    .c1{
+        position: relative;
+        left: 3rem;
+        top: -0.3rem;
+    }
+
+    
+    .line2{
+        position: relative;
+        left: 12.7rem;
+    }
+
+    .c2{
+        position: relative;
+        left: 3rem;
+        bottom: 0.33rem;
+    }
+    
+
+
+
+
+}
